@@ -1,0 +1,21 @@
+import { ssrRenderAttrs } from "vue/server-renderer";
+import { useSSRContext } from "vue";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const __pageData = JSON.parse('{"title":"n.tree binary tree","description":"","frontmatter":{},"headers":[],"relativePath":"past/1.fzu_data&algorithms/大二/n.tree_binary_tree.md","filePath":"past/1.fzu_data&algorithms/大二/n.tree_binary_tree.md","lastUpdated":null}');
+const _sfc_main = { name: "past/1.fzu_data&algorithms/大二/n.tree_binary_tree.md" };
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="n-tree-binary-tree" tabindex="-1">n.tree binary tree <a class="header-anchor" href="#n-tree-binary-tree" aria-label="Permalink to &quot;n.tree binary tree&quot;">​</a></h1><p>7-1-2 小字辈</p><p>分数 25</p><p>全屏浏览</p><p>切换布局</p><p>作者 陈越</p><p>单位 浙江大学</p><p>本题给定一个庞大家族的家谱，要请你给出最小一辈的名单。</p><h2 id="输入格式" tabindex="-1">输入格式 <a class="header-anchor" href="#输入格式" aria-label="Permalink to &quot;输入格式&quot;">​</a></h2><p>输入在第一行给出家族人口总数 N（不超过 100 000 的正整数） —— 简单起见，我们把家族成员从 1 到 N 编号。随后第二行给出 N 个编号，其中第 i 个编号对应第 i 位成员的父/母。家谱中辈分最高的老祖宗对应的父/母编号为 -1。一行中的数字间以空格分隔。</p><h2 id="输出格式" tabindex="-1">输出格式 <a class="header-anchor" href="#输出格式" aria-label="Permalink to &quot;输出格式&quot;">​</a></h2><p>首先输出最小的辈分（老祖宗的辈分为 1，以下逐级递增）。然后在第二行按递增顺序输出辈分最小的成员的编号。编号间以一个空格分隔，行首尾不得有多余空格。</p><h2 id="输入样例" tabindex="-1">输入样例 <a class="header-anchor" href="#输入样例" aria-label="Permalink to &quot;输入样例&quot;">​</a></h2><div class="language-text vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>9</span></span>
+<span class="line"><span>2 6 5 5 -1 5 6 4 7</span></span></code></pre></div><h2 id="输出样例" tabindex="-1">输出样例 <a class="header-anchor" href="#输出样例" aria-label="Permalink to &quot;输出样例&quot;">​</a></h2><div class="language-text vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>4</span></span>
+<span class="line"><span>1 9</span></span></code></pre></div><p>代码长度限制</p><p>16 KB</p><p>时间限制</p><p>400 ms</p><p>内存限制</p><p>64 MB</p><p>栈限制</p><p>8192 KB</p><h2 id="解答" tabindex="-1">解答 <a class="header-anchor" href="#解答" aria-label="Permalink to &quot;解答&quot;">​</a></h2></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("past/1.fzu_data&algorithms/大二/n.tree_binary_tree.md");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const n_tree_binary_tree = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+export {
+  __pageData,
+  n_tree_binary_tree as default
+};

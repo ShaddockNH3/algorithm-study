@@ -1,28 +1,64 @@
-# 算法学习与实践
+# 算法学习笔记
 
-## 前言
+这是一个算法与数据结构学习记录仓库，整理版文档位于 `docs/`，并通过 VitePress 部署为 GitHub Pages 文档站。
 
-本仓库用于记录个人在算法与数据结构的学习路径与代码实现。
+原始学习记录仍保留在根目录下的历史文件夹中；`docs/` 是适合阅读和部署的整理稿。
 
-在 2024.07 至 2025.06 期间，通过 C++ 完成了初步的算法积累，涉及内容包括 dsacpp 相关课程、福州大学算法课件、LeetCode HOT 100 以及《代码随想录》前期章节。
+## 站点
 
-基于对既往学习过程缺乏系统性的反思，自 2025.07.01 起，本项目将开发语言切换至 Go，旨在通过从零开始的系统性训练，构建更为扎实的底层知识网络。
+在线文档站：
 
-## 目录结构
+[https://shaddocknh3.github.io/algorithm-study/](https://shaddocknh3.github.io/algorithm-study/)
 
-* past/
-  该目录存放 2025 年 7 月之前的历史学习记录及早期 C++ 练习代码。
+## 文档结构
 
-* 0_go(代码随想录)/
-  周期：2025.07.01 - 2025.08.30。
-  目前已完成大部分章节的练习，待完善部分包括图论算法以及各章节中未攻克的进阶题目。
+文档站按时间和学习阶段分为三部分，顺序为：
 
-* 1_c++(代码随想录)/
-  周期：2025.10.01 - 2025.10.30。
-  该阶段为 C++ 算法逻辑的二次巩固，进度更新至树的中间部分（10 月 6 日进度），后因时间关系暂停更新。
+1. `docs/past/`
+   早期草稿，主要覆盖 2024 年 7 月到 2025 年 6 月之间的 DSA C++、FZU 课程、Hot100 和早期代码随想录记录。
 
-## 技术栈与参考资料
+2. `docs/go-code-thoughts/`
+   Go 版本《代码随想录》系统刷题笔记，从 2025 年 7 月 1 日开始整理，是当前主线。
 
-编程语言：Go、C++
+3. `docs/cpp-code-thoughts/`
+   C++ 版本《代码随想录》阶段性复盘，主要对应 2025 年 10 月，整理到树章节。
 
-练习资料：LeetCode、卡码网、代码随想录
+每个分区下都有单独的 `README.md`，用于说明该部分的范围和时间。
+
+## 本地预览
+
+安装依赖：
+
+```bash
+npm install
+```
+
+启动开发服务器：
+
+```bash
+npm run docs:dev
+```
+
+构建静态站点：
+
+```bash
+npm run docs:build
+```
+
+检查 Markdown：
+
+```bash
+npm run lint:md
+```
+
+## GitHub Pages
+
+仓库已包含 GitHub Actions workflow：
+
+```text
+.github/workflows/deploy.yml
+```
+
+推送到 `main` 或 `master` 后会自动构建 VitePress，并部署到 GitHub Pages。
+
+如果仓库不是 `<user>.github.io` 形式，VitePress 会根据 `GITHUB_REPOSITORY` 自动设置站点 `base` 为仓库名路径。
