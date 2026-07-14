@@ -78,12 +78,27 @@ function sidebarItems(dir: string, depth = 0): any[] {
     })
 }
 
-const sidebar = Object.fromEntries(
+const sectionSidebar = Object.fromEntries(
   sections.map((section) => [
     section.link,
     sidebarItems(path.join(docsRoot, section.dir))
   ])
 )
+
+const sidebar = {
+  '/': [
+    {
+      text: '开始阅读',
+      items: [
+        { text: '首页', link: '/' },
+        { text: 'Past', link: '/past/' },
+        { text: 'Go 代码随想录', link: '/go-code-thoughts/' },
+        { text: 'C++ 代码随想录', link: '/cpp-code-thoughts/' }
+      ]
+    }
+  ],
+  ...sectionSidebar
+}
 
 export default defineConfig({
   title: '算法学习笔记',
