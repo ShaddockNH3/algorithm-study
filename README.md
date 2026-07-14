@@ -1,5 +1,7 @@
 # 算法学习笔记
 
+[在线文档站：algorithm-study](https://shaddocknh3.github.io/algorithm-study/)
+
 这是一个算法与数据结构学习记录仓库，整理版文档位于 `docs/`，并通过 VitePress 部署为 GitHub Pages 文档站。
 
 原始学习记录仍保留在根目录下的历史文件夹中；`docs/` 是适合阅读和部署的整理稿。
